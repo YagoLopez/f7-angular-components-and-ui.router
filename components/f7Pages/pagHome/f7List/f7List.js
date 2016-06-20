@@ -1,6 +1,6 @@
 app.angular.component('f7List', {
 
-  templateUrl: '/components/f7Pages/pagHome/f7List/f7List.html',
+  templateUrl: 'components/f7Pages/pagHome/f7List/f7List.html',
 
   controller: function () {
 
