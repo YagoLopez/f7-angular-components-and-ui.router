@@ -31,6 +31,6 @@ This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.*
 # Demostration
 
 
-- [FOR DESKTOP (big screen size)](https://yagolopez.github.io/f7-angular-components-and-router/#/)
+- [FOR DESKTOP (big screen size)](https://yagolopez.github.io/f7-angular-components-and-ui.router/#/)
 
-- [FOR MOBILE (small screen size)](https://yagolopez.github.io/f7-angular-components-and-router/iframe/iframe.html)
+- [FOR MOBILE (small screen size)](https://yagolopez.github.io/f7-angular-components-and-ui.router/iframe/iframe.html)
