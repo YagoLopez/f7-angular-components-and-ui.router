@@ -1,0 +1,105 @@
+<style type="text/css">
+  .bckgrnd-toolbar {
+    background: #00bfff;
+  }
+  .marg-top-55 {
+    margin-top: 55px;
+  }
+  .bckgrnd-card {
+    background-image: url('/img/1.jpg');
+    color: white;
+  }
+  .title-picker {
+    color: white;
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .pad-right-20 {
+    padding-right: 20px;
+  }
+  .margn-0 {
+    margin: 0;
+  }
+/*
+  .pad-top-60 {
+    padding-top: 60px !important;
+  }
+*/
+/*
+  .pad-top-10{
+    padding-top: 10px !important;
+  }
+*/
+  .icon-list {
+    font-size: 21px !important;
+    color: #87cefa;
+  }
+
+  .marg-left-0 {
+    margin-left: 0 !important;
+  }
+  .btn-close-popover {
+    display: block;
+    font-size: 24px;
+    padding: 20px;
+    color: white;
+  }
+  .btn-close-popover.active-state{
+    background: #add8e6;
+  }
+  .nav-bar-ico{
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .btn-compartir {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .center-txt {
+    text-align: center;
+  }
+
+/*
+  .pad-bottm-50 {
+    padding-bottom: 50px;
+  }
+*/
+</style>
+
+<div data-page="home" class="page">
+
+  <!-- nav bar ===================================================================================================== -->
+  <div class="navbar sombra">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only open-panel" data-panel="left"><i class="link icon icon-bars"></i></a>
+      </div>
+      <div class="center">Sart Page</div>
+      <div class="right">
+        <a href="#" class="link icon-only open-panel" data-panel="right"><i class="icon ion-android-more-vertical nav-bar-ico"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- page content  =============================================================================================== -->
+  <div class="page-content bg-grey">
+    <f7-card></f7-card>
+    <f7-list></f7-list>
+    <div class="content-block">
+      <div class="center-txt">
+        <a href="#" class="button button-raised button-fill color-blue open-popover btn-compartir"
+           data-popover="#popover-share">
+          <i class="fa fa-share-alt-square"></i> Compartir
+        </a>
+        <br>
+      </div>
+      <div class="content-block-title">ACCORDION:</div>
+      <f7-accordion></f7-accordion>
+    </div>
+  </div>
+  <!-- /page content  ============================================================================================== -->
+
+  <f7-picker-modal></f7-picker-modal>
+
+</div>

@@ -1,0 +1,29 @@
+<style>
+  .ks-card-header-pic .card-header {
+    height: 25vw;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-link.active-state {
+    background-color: lightgray;
+    display:block;
+    box-shadow: 0 5px lightgray;
+  }
+  @media (min-width: 720px) {
+    .card.ks-card-header-pic {
+      width: 80%;
+      margin: 32px auto;
+    }
+  }
+</style>
+
+<a href="#" class="open-picker card-link" data-picker=".my-picker">
+<div class="card ks-card-header-pic">
+    <div valign="bottom" class="card-header color-white no-border bckgrnd-card"><b>Card</b></div>
+  <div class="card-content">
+    <div class="card-content-inner">
+      Card Title
+    </div>
+  </div>
+</div>
+</a>

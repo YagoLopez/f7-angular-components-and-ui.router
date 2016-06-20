@@ -1,0 +1,74 @@
+<style type="text/css">
+  .mrgn-top-104 {
+    margin-top: 104px;
+  }
+  .pad-top-9{
+    padding-top: 104px !important;
+  }
+  .searchbar-overlay {
+    top: 103px;
+  }
+/*
+  @media (min-width: 720px) {
+    .list-block {
+      background: #fff;
+      border-radius: 3px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      width: 80%;
+      margin: 32px auto;
+    }
+  }
+*/
+  .pad-right-5 {
+    padding-right: 5px;
+  }
+/*
+  .searchbar {
+    background: deepskyblue;
+    box-shadow: -1px 1px 5px #888888;
+  }
+*/
+</style>
+
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a ng-href="#/" class="link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Search Bar</div>
+    </div>
+  </div>
+
+  <form id="mySearchbar" data-search-list=".search-here" data-search-in=".item-title" class="searchbar searchbar-init">
+    <div class="searchbar-input">
+      <input type="search" placeholder="Search"/><a href="#" class="searchbar-clear"></a>
+    </div>
+  </form>
+  <div class="searchbar-overlay"></div>
+
+  <div class="page-content pad-top-9">
+    <div class="list-block searchbar-not-found">
+      <ul>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Nothing found</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="my-list" class="list-block searchbar-found responsive">
+      <ul>
+        <li class="item-content" ng-repeat="car in $ctrl.cars">
+          <div class="item-inner">
+            <div class="item-title">{{ car.name }}</div>
+            <div class="item-text">{{ car.hp }} HP</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+

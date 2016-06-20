@@ -1,0 +1,26 @@
+<style>
+  .pad-right-5 {
+    padding-right: 5px;
+  }
+</style>
+
+<div class="list-block responsive">
+  <ul>
+    <li ng-repeat="item in $ctrl.list" class="swipeout">
+      <div class="swipeout-content">
+        <a href="#" class="item-content item-link">
+          <div class="item-inner">
+            <div class="item-title">
+              <div class="city">{{ item.ciudad }}</div>
+              <div class="country">{{ item.pais }}</div>
+            </div>
+            <div class="item-after">{{ item.temperatura }}°</div>
+          </div>
+        </a>
+      </div>
+      <div class="swipeout-actions-right">
+        <a href="#" class="swipeout-delete"><i class="fa fa-close pad-right-5"></i>Borrar</a>
+      </div>
+    </li>
+  </ul>
+</div>

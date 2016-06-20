@@ -1,0 +1,50 @@
+<style>
+  .container {
+    margin-top: 104px !important;
+    padding-top: 5px !important;
+    height: 84% !important;
+  }
+  .desc{
+    font-size: small;
+    color:lightgrey;
+  }
+  #virtuallist > ul {
+    padding-bottom: 20px;
+  }
+</style>
+
+<div data-page="virtual-list" class="page">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a ng-href="#/" class="link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Virtual List</div>
+    </div>
+  </div>
+
+  <form id="mysearchbar" data-search-list="#virtuallist" class="searchbar searchbar-init">
+    <div class="searchbar-input">
+      <input type="search" placeholder="Search"/><a href="#" class="searchbar-clear"></a>
+    </div>
+  </form>
+  <div class="searchbar-overlay"></div>
+
+  <div class="page-content container">
+    <div class="content-block-title" style="padding-top: 0">VIRTUAL LIST</div>
+    <div class="content-block">
+      <p>Virtual List allows to render lists with huge amount of elements without loss of performance. And it is fully compatible with all Framework7 list components such as Search Bar, Infinite Scroll, Pull To Refresh, Swipeouts (swipe-to-delete) and Sortable.</p>
+      <p>Here is the example of virtual list with 10 000 items:</p>
+    </div>
+    <div id="notfound" class="list-block searchbar-not-found">
+      <ul>
+        <li class="item-content">
+          <div class="item-inner">
+            <div class="item-title">Nothing found</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="virtuallist" class="list-block virtual-list media-list responsive"></div>
+
+  </div>
+</div>

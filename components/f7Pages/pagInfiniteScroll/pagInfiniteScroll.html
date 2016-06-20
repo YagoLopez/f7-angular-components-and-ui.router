@@ -1,0 +1,49 @@
+<style>
+  .infinite-scroll-preloader {
+    margin-top:-20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .infinite-scroll-preloader .preloader {
+    width:34px;
+    height:34px;
+  }
+  .iscroll-container {
+    margin-top: 56px !important;
+    padding-top: 0 !important;
+    height: 90% !important;
+  }
+  .desc {
+    font-size: small;
+    color: #d3d3d3;
+  }
+</style>
+
+<div data-page="infinite-scroll" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a ng-href="#/" class="link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="center">Infinite Scroll</div>
+    </div>
+  </div>
+  <div class="page-content infinite-scroll iscroll-container" data-distance="50">
+    <div class="content-block-title">INFINITE SCROLL</div>
+    <div class="list-block responsive">
+      <ul>
+        <li class="item-content" ng-repeat="item in $ctrl.helperList">
+          <div class="item-inner">
+            <div class="item-title">
+              <div>{{ item.name }}</div>
+              <div class="desc">{{ item.desc }}</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Preloader -->
+    <div class="infinite-scroll-preloader">
+      <div class="preloader"></div>
+    </div>
+  </div>
+</div>
+

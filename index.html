@@ -1,0 +1,89 @@
+<!--todo: implementar page transitions de codrops-->
+<!--todo: hacer un repositorio con todos los componentes de f7 como componentes de angular-->
+<!--todo: implementar logica componente popover-share-->
+<!--todo: cambiar nombres a componentes. prefijo f7-->
+<!--todo: media queries para pag ayuda-->
+<!--todo: arreglar list page-->
+<!--todo: no hacen falta div.class=views ni div.class=page-->
+<!--todo: implementar navbar como componente con parametros-->
+<!--todo: implementar boton como componente-->
+<!--todo: el siguiente paso usar imports y es6-->
+<!--todo: intentar eliminar referencia a kitchen-sink.css-->
+<!--todo: arreglar lo de arrastrar menu lateral-->
+<!--todo: implementar algun test unitario-->
+<!--todo: draggable tabs-->
+<!--todo: incluir la fuente roboto en local-->
+
+<!DOCTYPE html>
+<html ng-app="app" lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#2196f3">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/framework7.material.optimized.css"><!-- no minificar -->
+  <!--<link rel="stylesheet" href="bower_components/Framework7/dist/css/framework7.material.css">-->
+  <!--<link rel="stylesheet" href="bower_components/Framework7/dist/css/framework7.material.colors.css">-->
+  <!--<link rel="stylesheet" href="bower_components/Framework7/kitchen-sink-material/css/kitchen-sink.css">-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/split-view.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!--<div class="views">-->
+    <f7-panel-left></f7-panel-left>
+    <f7-panel-right></f7-panel-right>
+
+    <div class="view view-main">
+      <div class="pages navbar-fixed toolbar-fixed">
+        <ui-view></ui-view>
+      </div>
+    </div>
+  <!--</div>-->
+
+  <f7-popup-detalle></f7-popup-detalle>
+  <f7-popover-share></f7-popover-share>
+  <f7-login></f7-login>
+
+  <!-- Scripts ===================================================================================================== -->
+  <script type="text/javascript" src="bower_components/Framework7/dist/js/framework7.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/services.js"></script>
+  <script type="text/javascript" src="js/filters.js"></script>
+
+  <!-- Pages components -->
+  <script type="text/javascript" src="components/f7Pages/pagHome/pagHome.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagHome/f7List/f7List.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagHome/f7Card/f7Card.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagHome/f7PickerModal/f7PickerModal.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagSearchList/pagSearchList.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagAyuda/pagAyuda.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagTabs/pagTabs.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagSwiper/pagSwiper.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagLazyLoad/pagLazyLoad.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagVirtualList/pagVirtualList.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagInfiniteScroll/pagInfiniteScroll.js"></script>
+  <script type="text/javascript" src="components/f7Pages/pagPhotos/pagPhotos.js"></script>
+
+  <!-- Other components -->
+  <script type="text/javascript" src="components/f7PanelLeft/f7PanelLeft.js"></script>
+  <script type="text/javascript" src="components/f7PanelRight/f7PanelRight.js"></script>
+  <script type="text/javascript" src="components/f7PopoverShare/f7PopoverShare.js"></script>
+  <script type="text/javascript" src="components/f7PopupDetalle/f7PopupDetalle.js"></script>
+  <script type="text/javascript" src="components/f7PopupDetalle/f7SpeedDial/f7SpeedDial.js"></script>
+  <script type="text/javascript" src="components/f7Accordion/f7Accordion.js"></script>
+  <script type="text/javascript" src="components/f7Login/f7Login.js"></script>
+  <!--<script type="text/javascript" src="bower_components/Framework7/kitchen-sink-material/js/kitchen-sink.js"></script>-->
+
+  <!-- /Scripts ==================================================================================================== -->
+</body>
+</html>
