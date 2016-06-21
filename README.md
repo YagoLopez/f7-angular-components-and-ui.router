@@ -18,7 +18,7 @@ This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.*
 
 - The project uses AngularJS UI-Router and ui-views, not Framework7 router. The F7 router is disabled.
 
-  ?
+
 
 
 
