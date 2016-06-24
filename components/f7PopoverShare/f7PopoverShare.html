@@ -50,27 +50,27 @@
       <div class="title">Compartir</div>
 
       <p class="buttons-row anchoBtn">
-        <a href="http://twitter.com/share?url={{ $ctrl.url|encodeString }}&text={{ $ctrl.msgShare|encodeString }}"
+        <a ng-href="{{ $ctrl.twitter }}"
            class="external button button-fill cornflowerblue" target="_blank">
           <i class="fa fa-twitter-square iconoShare"></i>Twitter</a>
       </p>
       <p class="buttons-row anchoBtn">
-        <a href="https://plus.google.com/share?url={{ $ctrl.url }}"
+        <a ng-href="{{ $ctrl.gPlus }}"
            class="external button button-fill deeppink" target="_blank">
           <i class="fa fa-google-plus-square iconoShare"></i>Google +</a>
       </p>
       <p class="buttons-row anchoBtn">
-        <a href="http://www.facebook.com/sharer/sharer.php?u={{ $ctrl.url|encodeString }}"
+        <a ng-href="{{ $ctrl.facebook }}"
            class="external button button-fill indigo" target="_blank">
           <i class="fa fa-facebook-square iconoShare"></i>Facebook</a>
       </p>
       <p class="buttons-row anchoBtn">
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ $ctrl.url }}&title={{ $ctrl.msgShare|encodeString }}&source={{ appName|encodeString }}"
+        <a ng-href="{{ $ctrl.linkedin }}"
            class="external button button-fill purple" target="_blank">
           <i class="fa fa-linkedin-square iconoShare"></i>LinkedIn</a>
       </p>
       <p class="buttons-row anchoBtn">
-        <a href="mailto:?subject=Enlace_compartido&body={{ $ctrl.msgShare + $ctrl.url|encodeString }}"
+        <a ng-href="{{ $ctrl.mail }}"
            class="external button button-fill deepskyblue" target="_blank">
           <i class="fa fa-envelope iconoShare fnt-size-32"></i>Email</a>
       </p>

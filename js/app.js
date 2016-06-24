@@ -83,6 +83,11 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
       url:'/pagPhotos',
       template: '<pag-photos></pag-photos>'
     });
+  $stateProvider.state(
+    'pagGrid', {
+      url:'/pagGrid',
+      template: '<pag-grid></pag-grid>'
+    });
 
   $routeProvider.otherwise({redirectTo: '/'});
 

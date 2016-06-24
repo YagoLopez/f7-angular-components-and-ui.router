@@ -1,6 +1,10 @@
+![Status](https://img.shields.io/badge/status-ok-green.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?maxAge=2592000) ![License](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)
+
+
+
 # f7-angular-components-and-ui.router-boilerplate
 
-This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.* components]() and [Angular UI-Router](https://angular-ui.github.io/ui-router/site/#/api/ui.router). It serves as a base project to create apps for mobile/desktop environments.
+This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.* components]() and [Angular UI-Router](https://angular-ui.github.io/ui-router/site/#/api/ui.router). It serves as a base project to create hybrid apps for mobile/desktop environments.
 
 - Components are placed in `/components` folder
 
@@ -21,10 +25,9 @@ This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.*
 
 
 
-
->**With this project all existing angular 1.* directives and code can be used***. 
+>**With this project all existing angular 1.* directives and code can be used**. 
 >
->**Also can be used JQuery plugins**
+>**Also JQuery plugins can be used in the project**
 
 
 
