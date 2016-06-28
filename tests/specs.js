@@ -2,7 +2,7 @@
 
 describe('Tests unitarios', function () {
 
-    beforeEach(module('f7-angular-components'));
+    beforeEach(module('app'));
     //beforeEach(inject(function(Service_name) {
     //    service_name  = Service_name;
     //}));

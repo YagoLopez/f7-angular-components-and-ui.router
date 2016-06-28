@@ -59,13 +59,12 @@
 
   .center-txt {
     text-align: center;
+    padding-top: 30px;
   }
 
-/*
-  .pad-bottm-50 {
-    padding-bottom: 50px;
+  .mrg-top-10 {
+    margin-top: 10px;
   }
-*/
 </style>
 
 <div data-page="home" class="page">
@@ -83,16 +82,14 @@
     </div>
   </div>
   <!-- page content  =============================================================================================== -->
-  <div class="page-content bg-grey">
-    <f7-card></f7-card>
-    <f7-list></f7-list>
-    <div class="content-block">
+  <div class="page-content bg-grey pt-page-scaleUpDown">
+    <div class="content-block mrg-top-10">
+      <f7-card></f7-card>
+      <f7-list></f7-list>
       <div class="center-txt">
-        <a href="#" class="button button-raised button-fill color-blue open-popover btn-compartir"
-           data-popover="#popover-share">
+        <a href="#" class="button button-raised button-fill color-blue open-popover btn-compartir" data-popover="#popover-share">
           <i class="fa fa-share-alt-square"></i> Compartir
         </a>
-        <br>
       </div>
       <div class="content-block-title">ACCORDION:</div>
       <f7-accordion></f7-accordion>

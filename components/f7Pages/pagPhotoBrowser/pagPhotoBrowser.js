@@ -1,6 +1,6 @@
-app.angular.component('pagPhotos', {
+app.angular.component('pagPhotoBrowser', {
 
-  templateUrl: 'components/f7Pages/pagPhotos/pagPhotos.html',
+  templateUrl: 'components/f7Pages/pagPhotoBrowser/pagPhotoBrowser.html',
 
   controller: function ($scope) {
     var photoBrowserPhotos = [

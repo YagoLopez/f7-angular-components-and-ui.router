@@ -17,7 +17,7 @@ app.f7 = new Framework7({
     fastClicks: true,
     pushState: false,
     sortable: false,
-    cache: true,
+    cache: false,
     modalButtonCancel: 'Cancelar',
     dynamicNavbar: false,
     materialPreloaderHtml: '<div style="text-align:center"><img src="img/9.gif" width="25"></div>',
@@ -31,7 +31,7 @@ app.f7 = new Framework7({
     //pushStateSeparator: '#!'
 });
 
-// Main view creation
+ //Main view creation
 //var mainView = app.f7.addView( '.view-main', {domCache: true} );
 
 app.angular = angular.module('app', ['ngRoute', 'ui.router']);
@@ -79,9 +79,9 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
       template: '<pag-infinite-scroll></pag-infinite-scroll>'
     });
   $stateProvider.state(
-    'pagPhotos', {
-      url:'/pagPhotos',
-      template: '<pag-photos></pag-photos>'
+    'pagPhotoBrowser', {
+      url:'/pagPhotoBrowser',
+      template: '<pag-photo-browser></pag-photo-browser>'
     });
   $stateProvider.state(
     'pagGrid', {
@@ -104,7 +104,8 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
   });
 });
 
-app.angular.run(function($rootScope, $location, $routeParams, $anchorScroll) {
+app.angular.run(function() {
   // init code
+
 });
 

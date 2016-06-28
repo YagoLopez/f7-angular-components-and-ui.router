@@ -1,14 +1,23 @@
 <style>
   .ico {
     padding-right: 5px;
+    font-size: 20px;
+  }
+  .bg-white{
+    background:white;
+  }
+  .list-title {
+    background: lightgrey !important;
+    color: white !important;
   }
 </style>
 
-<div class="list-block responsive">
+<div class="list-block responsive bg-white">
   <ul>
+    <li class="item-divider list-title"><strong>F7 LIST:</strong> Drag to the left for options</li>
     <li ng-repeat="item in $ctrl.list" class="swipeout">
       <div class="swipeout-content">
-        <a href="#" class="item-content item-link">
+        <a href="#" class="item-content item-link" ng-click="$ctrl.dialog(item.ciudad, item.temperatura)">
           <div class="item-inner">
             <div class="item-title">
               <div class="city">{{ item.ciudad }}</div>
@@ -19,7 +28,7 @@
         </a>
       </div>
       <div class="swipeout-actions-right">
-        <a href="#" class="swipeout-delete"><i class="fa fa-close ico"></i>Borrar</a>
+        <a href="#" class="swipeout-delete"><i class="icon ion-close-circled ico"></i>Borrar</a>
       </div>
     </li>
   </ul>

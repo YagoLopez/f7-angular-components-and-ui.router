@@ -1,19 +1,24 @@
 <style>
   .btn-width{
-    width:80%;
+    width:200px;
     margin:auto;
+  }
+
+  .pad-top-80 {
+    padding-top: 70px;
+  }
+
+  .width-350 {
+    width: 280px;
   }
 </style>
 <div class="login-screen">
-  <!-- Default view-page layout -->
   <div class="view">
     <div class="page">
-      <!-- page-content has additional login-screen content -->
       <div class="page-content login-screen-content">
-        <div class="login-screen-title"><i class="icon ion-social-angular-outline"></i> My App</div>
-        <!-- Login form -->
+        <div class="login-screen-title pad-top-80"><i class="icon ion-social-angular-outline"></i> My App</div>
         <form>
-          <div class="list-block">
+          <div class="list-block width-350">
             <ul>
               <li class="item-content">
                 <div class="item-inner">
@@ -33,12 +38,12 @@
               </li>
             </ul>
           </div>
-          <div class="list-block">
-            <ul>
-              <li class="centered">
-                <a ng-href="#/" class="button button-fill button-raised close-login-screen btn-width">Log In</a></li>
-            </ul>
-            <div class="list-block-label centered">Some text with login information.</div>
+          <div class="content-block pad-top-80">
+            <div class="centered">
+              <a ng-href="#/" class="button button-fill button-raised close-login-screen btn-width">
+                <i class="icon ion-log-in"></i> Log In
+              </a>
+            </div>
           </div>
         </form>
       </div>

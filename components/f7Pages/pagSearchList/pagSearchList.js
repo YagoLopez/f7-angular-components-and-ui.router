@@ -4,7 +4,7 @@ app.angular.component('pagSearchList', {
 
   controller: function () {
 
-    // Searchbar initialization
+    // The searchbar has to be initialisated by javascript using angular components
     var mySearchbar = app.f7.searchbar('#mySearchbar', {
       searchList: '#my-list',
       searchIn: '.item-title, .item-text'
