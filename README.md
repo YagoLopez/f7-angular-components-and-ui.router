@@ -15,6 +15,7 @@ This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.+
 - Components allow to define CSS styles in the html template for encapsulation
 - The project uses *AngularJS UI-Router* and *ui-views*, not Framework7 router. The F7 router is disabled.
 - There is no need to use `<div class="views"></div>` from F7 because it is used `<ui-view></ui-view>` in its place
+- This template project uses a modified version of Framework 7 material CSS styles. Some animations and effects are omited for performance reasons. (For example, ripple effect)
 
 
 
@@ -33,9 +34,14 @@ Because of using *Angular UI-Router*, route changes do not have transitions anim
   - Animation to close the side menu panel.
   - Animation to leave the current state.
   - Animation for entering the new state.
+- Instead of three animations in the worst case are used only two simultaneously:
+  - Animation to close the side menu panel
+  - Animation to enter a new state/page
 
 
-- Instead of applying the animation to the whole page on the element`<div class="page"></div>`, it was chosen to apply the animation classes only to the page content`<div class="page-content"></div>`. This way the performance is better; there is less dom elements to apply CSS animation calculations.
+
+
+- Instead of applying an animation to the whole page on `<div class="page"></div>`, only it is applied to the page content `<div class="page-content"></div>`. This way the performance is better; there is less dom elements to apply CSS animation calculations.
 - Note 1: Lazy-load page has no animation. It is not adviceable to apply animations to this kind of content. The images could not load initially.
 - Note 2: the default animation "scaleUpDown" does not render smoothly in the page "grid" because there are a lot of calculations to make the grid responsive. It has been used "moveFromLeft" in its place.
 
