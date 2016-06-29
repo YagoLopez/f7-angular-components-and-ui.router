@@ -5,7 +5,6 @@ app.angular.component('pagHome', {
   controller: function ($rootScope) {
     console.log('pagHome ctrl');
     this.test = 'test';
-    $rootScope.pageClass = 'page-home';
   }
 
 });

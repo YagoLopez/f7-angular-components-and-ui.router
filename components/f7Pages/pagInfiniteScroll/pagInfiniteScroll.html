@@ -17,6 +17,10 @@
     font-size: small;
     color: #d3d3d3;
   }
+  .content-block-title.responsive {
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
 </style>
 
 <div data-page="infinite-scroll" class="page">
@@ -27,7 +31,7 @@
     </div>
   </div>
   <div class="page-content infinite-scroll iscroll-container pt-page-scaleUpDown" data-distance="50">
-    <div class="content-block-title">INFINITE SCROLL</div>
+    <div class="content-block-title responsive">INFINITE SCROLL</div>
     <div class="list-block responsive">
       <ul>
         <li class="item-content" ng-repeat="item in $ctrl.helperList">
@@ -41,9 +45,8 @@
       </ul>
     </div>
     <!-- Preloader -->
-    <div class="infinite-scroll-preloader">
-      <div class="preloader"></div>
-    </div>
+    <div class="infinite-scroll-preloader"><div class="preloader"></div></div>
+    <!-- /Preloader -->
   </div>
 </div>
 

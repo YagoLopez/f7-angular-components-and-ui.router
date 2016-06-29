@@ -6,34 +6,30 @@
     padding: 0;
     width: 100%;
   }
+
   #menu > li a {
     display: block;
     color: dimgray;
     padding: 4px 0 4px 16px;
     text-decoration: none;
   }
-  .menu-link {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+
   #menu > li a.active-state{
     background-color: lightgray;
+  }
+  #menu > li > div.menu-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .img-menu {
     margin-bottom: -6px;
     height: 170px;
     width: 100%;
   }
-  .ico {
+  .icon-menu {
     padding-right: 5px;
     font-size: 24px;
   }
-
-/*
-  .fnt-size-24 {
-    font-size: 24px;
-  }
-*/
 </style>
 
 <div class="panel-overlay"></div>
@@ -48,78 +44,78 @@
     <li>
       <div class="menu-link">
         <a ng-href="#/" class="close-panel">
-          <i class="icon ion-ios-home ico"></i> Start</a>
+          <i class="icon ion-ios-home icon-menu"></i> Start</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/listPage" class="close-panel">
-          <i class="icon ion-ios-list-outline ico"></i> Search List</a>
+          <i class="icon ion-ios-list-outline icon-menu"></i> Search List</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a href="#" class="open-popup close-panel" data-popup=".popup-detalle">
-          <i class="icon ion-android-open ico"></i> Popup Page</a>
+          <i class="icon ion-android-open icon-menu"></i> Popup Page</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/helpPage" class="close-panel">
-        <i class="icon ion-help-circled ico"></i> Help Page</a>
+        <i class="icon ion-help-circled icon-menu"></i> Help Page</a>
       </div>
     </li>
     <li>
       <div class="menu-link"><a href="#" ng-click="$ctrl.openMyModal()" class="close-panel">
-        <i class="icon ion-ios-photos-outline ico"></i> Alert Modal</a>
+        <i class="icon ion-ios-photos-outline icon-menu"></i> Alert Modal</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/tabsPage" class="close-panel">
-        <i class="icon ion-android-folder-open ico"></i> Tabs Page</a>
+        <i class="icon ion-android-folder-open icon-menu"></i> Tabs Page</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/swiperPage" class="close-panel">
-          <i class="icon ion-arrow-swap ico"></i> Swiper Page</a>
+          <i class="icon ion-arrow-swap icon-menu"></i> Swiper Page</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/pagLazyLoad" class="close-panel">
-          <i class="icon ion-image ico"></i> Lazy Loading Images</a>
+          <i class="icon ion-image icon-menu"></i> Lazy Loading Images</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/pagVirtualList" class="close-panel">
-          <i class="icon ion-ios-list ico"></i> Virtual List</a>
+          <i class="icon ion-ios-list icon-menu"></i> Virtual List</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/pagInfiniteScroll" class="close-panel">
-          <i class="icon ion-arrow-graph-down-right ico"></i> Infinite Scroll</a>
+          <i class="icon ion-arrow-graph-down-right icon-menu"></i> Infinite Scroll</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a ng-href="#/pagPhotoBrowser" class="close-panel">
-          <i class="icon ion-camera ico"></i> Photo Browser</a>
+          <i class="icon ion-camera icon-menu"></i> Photo Browser</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a href="#" class="open-login-screen close-panel">
-          <i class="icon ion-log-in ico"></i> Login Page</a>
+          <i class="icon ion-log-in icon-menu"></i> Login Page</a>
       </div>
     </li>
     <li>
       <div class="menu-link">
         <a href="#/pagGrid" class="close-panel">
-          <i class="icon ion-grid ico"></i> Grid Page</a>
+          <i class="icon ion-grid icon-menu"></i> Grid Page</a>
       </div>
     </li>
   </ul>

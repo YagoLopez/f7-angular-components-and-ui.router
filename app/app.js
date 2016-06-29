@@ -8,7 +8,7 @@ app.f7 = new Framework7({
     animatePages: false,
     material: true,
     materialRipple: false,
-    materialPageLoadDelay: 0,
+    materialPageLoadDelay: 1110,
     swipePanel: 'left',
     swipePanelActiveArea: 500,
     swipePanelThreshold: 10,
@@ -36,7 +36,7 @@ app.f7 = new Framework7({
 
 app.angular = angular.module('app', ['ngRoute', 'ui.router']);
 
-app.angular.config( function($provide, $compileProvider, $httpProvider, $stateProvider, $routeProvider) {
+app.angular.config( function($provide, $compileProvider, $httpProvider, $stateProvider, $routeProvider, $logProvider) {
 
   $stateProvider.state(
     '/', {
@@ -92,8 +92,8 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
   $routeProvider.otherwise({redirectTo: '/'});
 
   $compileProvider.debugInfoEnabled(true);
-  // habilitar para mejor rendimiento
-  //$httpProvider.useApplyAsync(true);
+  $httpProvider.useApplyAsync(true);
+  $logProvider.debugEnabled(true);
 
   $provide.decorator('$exceptionHandler', function($log, $delegate, Error) {
     return function(exception, cause) {

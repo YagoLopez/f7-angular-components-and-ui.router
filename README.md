@@ -7,7 +7,7 @@
 This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.+ components]() and [Angular UI-Router](https://angular-ui.github.io/ui-router/site/#/api/ui.router). It serves as a base project to create hybrid applications for mobile/desktop environments.
 
 - Components are placed in `/components` folder
-- Angular initializacion and configuration and Angular services are located in `/js` folder
+- App configuration and other Angular files are located in the `/app` folder
 - Each componet has associated an Angular **.html** template and a Javascript **.js** file where the controller logic resides
 - For example, there is a **f7Accordion** component defined in `/components/f7Accordion/`. You can use this component in any view (html file) using this custom tag:`<f7-accordion></f7-accordion>`. You can also adapt the behavior and look to your needs modifing the files: `/components/f7Accordion/f7Accordion.js` and `/components/f7Accordion/f7Accordion.html`
 - Each subcomponent included in other component are placed in a subdirectory except when the subcomponent is used in several places. This is for component reusability. For example, **f7SpeedDial** is only used in **f7Popup** component, so it will be placed in `/components/f7Popup/f7SpeedDial`

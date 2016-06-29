@@ -23,12 +23,10 @@ app.angular.component('pagInfiniteScroll', {
     // Attach infinite scroll event handler to dom element
     app.f7.attachInfiniteScroll('.infinite-scroll');
 
-    // Handle onInfinite event
+    // Handle onInfiniteScroll event
     var self = this;
     $$('.infinite-scroll').on('infinite', function () {
       if(self.helperList.length < originalList.length){
-        //console.log('list.length', originalList.length);
-        //console.log('helperList.length', self.helperList.length);
         console.log('itemIndex', itemIndex);
         for (var i = itemIndex; i < itemIndex+showInitialItems; i++){
           self.helperList.push({name: 'Item '+i, desc: 'desc item '+i});
