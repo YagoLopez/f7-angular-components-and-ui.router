@@ -6,11 +6,11 @@
 
 This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.+ components]() and [Angular UI-Router](https://angular-ui.github.io/ui-router/site/#/api/ui.router). It serves as a base project to create hybrid applications for mobile/desktop environments.
 
-- Components are placed in `/components` folder
+- Components are placed in `/app/components` folder
 - App configuration and other Angular files are located in the `/app` folder
 - Each componet has associated an Angular **.html** template and a Javascript **.js** file where the controller logic resides
-- For example, there is a **f7Accordion** component defined in `/components/f7Accordion/`. You can use this component in any view (html file) using this custom tag:`<f7-accordion></f7-accordion>`. You can also adapt the behavior and look to your needs modifing the files: `/components/f7Accordion/f7Accordion.js` and `/components/f7Accordion/f7Accordion.html`
-- Each subcomponent included in other component are placed in a subdirectory except when the subcomponent is used in several places. This is for component reusability. For example, **f7SpeedDial** is only used in **f7Popup** component, so it will be placed in `/components/f7Popup/f7SpeedDial`
+- For example, there is a **f7Accordion** component defined in `/app/components/f7Accordion/`. You can use this component in any view (html file) using this custom tag:`<f7-accordion></f7-accordion>`. You can also adapt the behavior and look to your needs modifing the files: `/app/components/f7Accordion/f7Accordion.js` and `/app/components/f7Accordion/f7Accordion.html`
+- Each subcomponent included in other component are placed in a subdirectory except when the subcomponent is used in several places. This is for component reusability. For example, **f7SpeedDial** is only used in **f7PopupDetalle** component, so it will be placed in `/components/f7Popup/f7SpeedDial` but **f7PopoverShare** is used in the **pagHome** and in **f7PopupDetalle** so it is placed in `/app/components/`
 - The html layout has responsive design using media queries. It adapts to phone/tablet/desktop screens when is possible
 - Components allow to define CSS styles in the html template for encapsulation
 - The project uses *AngularJS UI-Router* and *ui-views*, not Framework7 router. The F7 router is disabled.
@@ -50,6 +50,6 @@ Because of using *Angular UI-Router*, route changes do not have transitions anim
 # Demostration
 
 
-- [FOR DESKTOP (big screen size)](https://yagolopez.github.io/f7-angular-components-and-ui.router/#/)
+- [FOR MOBILE (devices with small screen size)](https://yagolopez.github.io/f7-angular-components-and-ui.router/#/)
 
-- [FOR MOBILE (small screen size)](https://yagolopez.github.io/f7-angular-components-and-ui.router/iframe/iframe.html)
+- [FOR DESKTOP (devices with wide screen size)](https://yagolopez.github.io/f7-angular-components-and-ui.router/iframe/iframe.html)
