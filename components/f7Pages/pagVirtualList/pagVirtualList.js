@@ -12,6 +12,7 @@ app.angular.component('pagVirtualList', {
 
     // Virtual list initialization
     var myList = app.f7.virtualList('#virtuallist', {
+
       items: items,
 
       searchAll: function (query, items) {
