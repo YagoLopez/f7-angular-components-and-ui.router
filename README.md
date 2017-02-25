@@ -6,14 +6,15 @@
 
 This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.+ components]() and [Angular UI-Router](https://angular-ui.github.io/ui-router/site/#/api/ui.router). It serves as a base project to create hybrid applications for mobile/desktop environments.
 
+# Architecture
+
 - Components are placed in `/app/components` folder
-- App configuration and other Angular files are located in the `/app` folder
-- Each componet has associated an Angular **.html** template and a Javascript **.js** file where the controller logic resides
-- For example, there is a **f7Accordion** component defined in `/app/components/f7Accordion/`. You can use this component in any view (html file) using this custom tag:`<f7-accordion></f7-accordion>`. You can also adapt the behavior and look to your needs modifing the files: `/app/components/f7Accordion/f7Accordion.js` and `/app/components/f7Accordion/f7Accordion.html`
-- Each subcomponent included in other component are placed in a subdirectory except when the subcomponent is used in several places. This is for component reusability. For example, **f7SpeedDial** is only used in **f7PopupDetalle** component, so it will be placed in `/components/f7Popup/f7SpeedDial` but **f7PopoverShare** is used in the **pagHome** and in **f7PopupDetalle** so it is placed in `/app/components/`
+- App configuration and other Angular files are located in the `/app/js` folder
+- Each componet has associated an Angular **.html** template and a Javascript **.js** file where the controller logic resides. For example, there is a **f7Accordion** component defined in `/app/components/f7Accordion/`. You can use this component in any view (html file) using this custom tag:`<f7-accordion></f7-accordion>`. You can also adapt the behavior and look to your needs modifing the files: `/app/components/f7Accordion/f7Accordion.js` and `/app/components/f7Accordion/f7Accordion.html`
+- Each subcomponent included in other component are placed in a subdirectory except when the subcomponent is used in several places. This is for component reusability. For example, **f7SpeedDial** is only used in **f7PopupDetalle** component, so it will be placed in `/components/f7Popup/f7SpeedDial` . However **f7PopoverShare** is used in **pagHome** and **f7PopupDetalle** so it is placed in `/app/components/`
 - The html layout has responsive design using media queries. It adapts to phone/tablet/desktop screens when is possible
-- Components allow to define CSS styles in the html template for encapsulation
-- The project uses *AngularJS UI-Router* and *ui-views*, not Framework7 router. The F7 router is disabled.
+- Component CSS styles are defined in the html template for easy encapsulation. Be careful with CSS selectors and names to only apply the styles to the component.
+- The project uses *AngularJS UI-Router* and *UI-views*, not Framework7 router. The F7 router is disabled.
 - There is no need to use `<div class="views"></div>` from F7 because it is used `<ui-view></ui-view>` in its place
 - This template project uses a modified version of Framework 7 material CSS styles. Some animations and effects are omited for performance reasons. (For example, ripple effect)
 
@@ -22,13 +23,13 @@ This project integrates [Framework7](http://framework7.io) with [AngularJS 1.5.+
 
 >**With this project all existing angular 1.* directives and code can be used**. 
 >
->**Also JQuery plugins can be used**
+>**Also JQuery and NPM plugins can be used**
 
 
 
 # About animations and transitions
 
-Because of using *Angular UI-Router*, route changes do not have transitions animated like in F7. It has been necessary to implement a new animation system. It has been carefully chosen to perform good on old stock android phones taking in account some considerations:
+Due to the use of *Angular UI-Router* instead of F7 router, page changes do not have transitions animated like in F7. It has been necessary to implement a new animation system. It has been carefully chosen to perform good on old stock android phones taking in account some considerations:
 
 - The option of using *UI-Router* and *Ng-Animations* was discarded. This implied to have three animations at the same time and had poor performance.  This three simultaneous animations were: 
   - Animation to close the side menu panel.

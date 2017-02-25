@@ -6593,8 +6593,8 @@
             // Animated tabs
             var isAnimatedTabs = tabs.parent().hasClass('tabs-animated-wrap');
             if (isAnimatedTabs) {
-                var tabTranslate = (app.rtl ? newTab.index() : -newTab.index()) * 100;
-                tabs.transform('translate3d(' + tabTranslate + '%,0,0)');
+              var tabTranslate = (app.rtl ? newTab.index() : -newTab.index()) * 100;
+              tabs.transform('translate3d(' + tabTranslate + '%,0,0)');
             }
         
             // Swipeable tabs

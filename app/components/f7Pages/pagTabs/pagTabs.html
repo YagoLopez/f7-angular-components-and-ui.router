@@ -15,11 +15,6 @@
     width: 33.3333%;
     transform: translate3d(0%, 0px, 0px);
   }
-  /*
-    a.tab-link.active-state{
-      background:lightskyblue !important;
-    }
-  */
 </style>
 
 <div class="page toolbar-fixed">
@@ -33,13 +28,13 @@
   <!-- tabbar  ===================================================================================================== -->
   <div class="toolbar tabbar height-75">
     <div class="toolbar-inner">
-      <a href="#tab1" class="active tab-link">
+      <a ng-href="#tab1" class="active tab-link">
         <i class="icon ion-compose tab-icon"></i><span class="tabbar-label">Tab 1</span>
       </a>
-      <a href="#tab2" class="tab-link">
+      <a ng-href="#tab2" class="tab-link">
         <i class="icon ion-gear-b tab-icon"></i><span class="tabbar-label">Tab 2</span>
       </a>
-      <a href="#tab3" class="tab-link">
+      <a ng-href="#tab3" class="tab-link">
         <i class="icon ion-android-alarm-clock tab-icon"></i><span class="tabbar-label">Tab 3</span>
       </a>
       <span class="tab-link-highlight tab-lnk-style"></span>
@@ -73,3 +68,4 @@
   </div>
   <!-- /tabs content =============================================================================================== -->
 </div>
+

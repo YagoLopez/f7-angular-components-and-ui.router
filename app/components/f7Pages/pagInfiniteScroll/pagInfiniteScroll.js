@@ -5,7 +5,7 @@ app.angular.component('pagInfiniteScroll', {
   controller: function ($scope) {
     var originalList = [];
     var helperList = [];
-    var showInitialItems = 20;
+    var itemsPerScroll = 20;
     var itemIndex = 0;
 
     // Simulate original list
@@ -13,7 +13,7 @@ app.angular.component('pagInfiniteScroll', {
       originalList[i] = {name: 'Item '+i, desc: 'desc item '+i};
     }
     // Create helper list to show on screen
-    for (var j = 0; j < showInitialItems; j++){
+    for (var j = 0; j < itemsPerScroll; j++){
       helperList[j] = originalList[j];
     }
     // Bind helper list to controller scope
@@ -26,16 +26,16 @@ app.angular.component('pagInfiniteScroll', {
     // Handle onInfiniteScroll event
     var self = this;
     $$('.infinite-scroll').on('infinite', function () {
-      if(self.helperList.length < originalList.length){
+      if( self.helperList.length < originalList.length ){
         console.log('itemIndex', itemIndex);
-        for (var i = itemIndex; i < itemIndex+showInitialItems; i++){
+        for (var i = itemIndex; i < itemIndex+itemsPerScroll; i++){
           self.helperList.push({name: 'Item '+i, desc: 'desc item '+i});
         }
-        itemIndex = itemIndex + showInitialItems;
-        console.log('item index acutalizado', itemIndex);
+        itemIndex = itemIndex + itemsPerScroll;
+        console.log('itemIndex updated', itemIndex);
         $scope.$apply();
       } else {
-        console.log('detach infinite scroll');
+        console.log('end of infinite scroll reached');
         app.f7.detachInfiniteScroll('.infinite-scroll');
       }
     });

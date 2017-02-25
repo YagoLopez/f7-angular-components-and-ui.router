@@ -20,7 +20,7 @@ app.f7 = new Framework7({
     cache: false,
     modalButtonCancel: 'Cancelar',
     dynamicNavbar: false,
-    materialPreloaderHtml: '<div style="text-align:center"><img src="img/9.gif" width="25"></div>',
+    materialPreloaderHtml: '<div style="text-align:center"><img src="../img/9.gif" width="25"></div>',
     materialPreloaderSvg: '',
     materialRippleElements: '',
     scrollTopOnNavbarClick: true,
@@ -31,12 +31,13 @@ app.f7 = new Framework7({
     //pushStateSeparator: '#!'
 });
 
- //Main view creation
+//Main view creation
 //var mainView = app.f7.addView( '.view-main', {domCache: true} );
 
 app.angular = angular.module('app', ['ngRoute', 'ui.router']);
 
-app.angular.config( function($provide, $compileProvider, $httpProvider, $stateProvider, $routeProvider, $logProvider) {
+app.angular.config( function($provide, $compileProvider, $httpProvider, $stateProvider, $routeProvider, $logProvider,
+  $locationProvider) {
 
   $stateProvider.state(
     '/', {
@@ -51,7 +52,7 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
   $stateProvider.state(
     'helpPage', {
       url:'/helpPage',
-      template: '<pag-ayuda></pag-ayuda>'
+      template: '<pag-help></pag-help>'
     });
   $stateProvider.state(
     'tabsPage', {
@@ -91,7 +92,7 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
 
   $routeProvider.otherwise({redirectTo: '/'});
 
-  $compileProvider.debugInfoEnabled(true);
+  $compileProvider.debugInfoEnabled(false);
   $httpProvider.useApplyAsync(true);
   $logProvider.debugEnabled(true);
 
@@ -106,6 +107,5 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
 
 app.angular.run(function() {
   // init code
-
 });
 

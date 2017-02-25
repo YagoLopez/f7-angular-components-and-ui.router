@@ -1,7 +1,7 @@
 {
   "name": "f7-angular-components",
   "version": "1.0.0",
-  "description": "Boilerplate for angular 1.5.* components and Framework7 integration",
+  "description": "Boilerplate for angular 1.5.+ components and Framework7 integration",
   "main": "index.html",
   "directories": {
     "test": "tests"
@@ -16,7 +16,8 @@
   "keywords": [
     "framework7",
     "angular",
-    "components"
+    "components",
+    "ui.router"
   ],
   "author": "Yago Lopez Salvador",
   "license": "MIT",

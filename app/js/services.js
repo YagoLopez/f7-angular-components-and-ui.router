@@ -25,8 +25,8 @@ app.angular.constant('C', {
   CONSTANT1: 'constant1',
   CONSTANT2: 'constant2',
   STRINGS: {
-    LOADING_ICON: '<img src="img/3.gif" style="vertical-align: middle"/>',
-    TXT_LOADING_DETALLE: '<img src="img/3.gif" style="vertical-align: middle"/>' + ' Obteniendo datos... ',
+    LOADING_ICON: '<img src="../img/3.gif" style="vertical-align: middle"/>',
+    TXT_LOADING_DETALLE: '<img src="../img/3.gif" style="vertical-align: middle"/>' + ' Obteniendo datos... ',
     TXT_PRELOADER: '<span style="font-size:small">Cargando datos. Espere, por favor...</span>'
   }
 });
