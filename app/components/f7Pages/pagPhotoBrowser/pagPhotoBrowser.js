@@ -5,17 +5,17 @@ app.angular.component('pagPhotoBrowser', {
   controller: function ($scope) {
     var photoBrowserPhotos = [
       {
-        url: '/app/img/beach.jpg',
+        url: 'app/img/beach.jpg',
         caption: 'Amazing beach in Goa, India'
       },
       'http://placekitten.com/1024/1024',
-      '/app/img/lock.jpg',
+      'app/img/lock.jpg',
       {
-        url: '/app/img/monkey.jpg',
+        url: 'app/img/monkey.jpg',
         caption: 'I met this monkey in Chinese mountains'
       },
       {
-        url: '/app/img/mountains.jpg',
+        url: 'app/img/mountains.jpg',
         caption: 'Beautiful mountains in Zhangjiajie, China'
       }
     ];

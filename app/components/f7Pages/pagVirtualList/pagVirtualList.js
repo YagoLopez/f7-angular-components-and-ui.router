@@ -34,7 +34,7 @@ app.angular.component('pagVirtualList', {
 
       template:
         '<li class="item-content">' +
-        '<div class="item-media"><img src="/app/img/favicon.png" height="40px"></div>' +
+        '<div class="item-media"><img src="app/img/favicon.png" height="40px"></div>' +
         '<div class="item-inner">' +
         '<div class="item-title">' +
         '<div id="title">{{title}}<div>' +
