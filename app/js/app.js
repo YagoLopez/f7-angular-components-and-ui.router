@@ -92,7 +92,7 @@ app.angular.config( function($provide, $compileProvider, $httpProvider, $statePr
 
   $routeProvider.otherwise({redirectTo: '/'});
 
-  $compileProvider.debugInfoEnabled(false);
+  $compileProvider.debugInfoEnabled(true);
   $httpProvider.useApplyAsync(true);
   $logProvider.debugEnabled(true);
 
