@@ -3,7 +3,6 @@ app.angular.component('f7List', {
   templateUrl: 'app/components/f7Pages/pagHome/f7List/f7List.html',
 
   controller: function () {
-
     this.list = [
       {ciudad: 'Madrid', pais: 'España', temperatura: 30},
       {ciudad: 'Bilbao', pais: 'España', temperatura: 20},
