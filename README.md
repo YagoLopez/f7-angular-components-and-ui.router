@@ -53,4 +53,4 @@ Due to the use of *Angular UI-Router* instead of F7 router, page changes do not 
 
 - [FOR MOBILE (devices with small screen size)](https://yagolopez.github.io/f7-angular-components-and-ui.router/#/)
 
-- [FOR DESKTOP (devices with wide screen size)](http://mobiletest.me/htc_one_emulator/?u=https://yagolopez.github.io/f7-angular-components-and-ui.router/#/)
+- [FOR DESKTOP (devices with wide screen size)](http://mobiletest.me/htc_one_emulator/?u=https://yagolopez.github.io/f7-angular-components-and-ui.router/index.html#/)
